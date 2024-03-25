@@ -17,3 +17,20 @@ a {
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
 }
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  outline: none; 
+  box-sizing: border-box;
+  display: inline-block; 
+  text-align: center; 
+  
+}

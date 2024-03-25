@@ -4,13 +4,13 @@ import { assets } from '../../assets/assets';
 
 export default function Navbar() {
 
-    const [menu, setMenu] = useState("");
+    const [menu, setMenu] = useState("Home");
 
     return (
         <>
             <div className='navbar'>
                 <div className='left-nav'>
-                    <img src={assets.logo} alt="" />
+                    <img onClick={()=> setMenu("Home")} src={assets.logo} alt="" />
                 </div>
                 <div className='right-nav'>
                     <a onClick={() => setMenu("OurStory")} href="#" className={menu === "OurStory" ? "active" : ""}>Our Story</a>
@@ -20,7 +20,6 @@ export default function Navbar() {
                     <a href="#" className='special-nav-link'>Get Started</a>
                 </div>
             </div>
-            <hr />
         </>
     )
 }
