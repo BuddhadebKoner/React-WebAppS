@@ -1,9 +1,11 @@
-import React from 'react'
-import './Navbar.css'
-import { assets } from '../../assets/assets'
-
+import React, { useState } from 'react';
+import './Navbar.css';
+import { assets } from '../../assets/assets';
 
 export default function Navbar() {
+
+    const [menu, setMenu] = useState("");
+
     return (
         <>
             <div className='navbar'>
@@ -11,14 +13,14 @@ export default function Navbar() {
                     <img src={assets.logo} alt="" />
                 </div>
                 <div className='right-nav'>
-                    <a href="#" className='normal-nav-link'>Our Story</a>
-                    <a href="#" className='normal-nav-link'>Membership</a>
-                    <a href="#" className='normal-nav-link'>Write</a>
-                    <a href="#" className='normal-nav-link'>Contac us</a>
+                    <a onClick={() => setMenu("OurStory")} href="#" className={menu === "OurStory" ? "active" : ""}>Our Story</a>
+                    <a onClick={() => setMenu("Membership")} href="#" className={menu === "Membership" ? "active" : ""}>Membership</a>
+                    <a onClick={() => setMenu("WriteBlog")} href="#" className={menu === "WriteBlog" ? "active" : ""}>Write</a>
+                    <a onClick={() => setMenu("Contactus")} href="#" className={menu === "Contactus" ? "active" : ""}>Contact us</a>
                     <a href="#" className='special-nav-link'>Get Started</a>
                 </div>
             </div>
-            <hr></hr>
+            <hr />
         </>
     )
 }

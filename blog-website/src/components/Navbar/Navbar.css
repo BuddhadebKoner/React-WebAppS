@@ -24,24 +24,24 @@
     justify-content: center;
 }
 
-.normal-nav-link{
+.right-nav > a:nth-child(-n+4) {
     font-size: 15px;
     margin: 0px 15px;
     color: black;
     font-size: 18px;
-    padding: 5px;
+    padding-bottom: 5px;
     box-sizing: content-box;
 }
 
-.normal-nav-link:hover{
-    border: 1px solid black;
-    padding: 4px;
-    background-color: white;
-}
 
 .special-nav-link {
     color: white;
     background-color: black;
     padding: 15px;
     border-radius: 99em;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 3px solid black;
 }
