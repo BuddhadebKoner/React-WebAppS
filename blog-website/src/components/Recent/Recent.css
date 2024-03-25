@@ -20,3 +20,13 @@
     align-items: center;
     gap: 15px;
 }
+
+.recent-cards-container {
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: auto;
+}

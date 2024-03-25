@@ -10,14 +10,14 @@ export default function Navbar() {
         <>
             <div className='navbar'>
                 <div className='left-nav'>
-                    <img onClick={()=> setMenu("Home")} src={assets.logo} alt="" />
+                    <img onClick={() => setMenu("Home")} src={assets.logo} alt="" />
                 </div>
                 <div className='right-nav'>
-                    <a onClick={() => setMenu("OurStory")} href="#" className={menu === "OurStory" ? "active" : ""}>Our Story</a>
-                    <a onClick={() => setMenu("Membership")} href="#" className={menu === "Membership" ? "active" : ""}>Membership</a>
-                    <a onClick={() => setMenu("WriteBlog")} href="#" className={menu === "WriteBlog" ? "active" : ""}>Write</a>
-                    <a onClick={() => setMenu("Contactus")} href="#" className={menu === "Contactus" ? "active" : ""}>Contact us</a>
-                    <a href="#" className='special-nav-link'>Get Started</a>
+                    <button onClick={() => setMenu("OurStory")} className={menu === "OurStory" ? "active" : ""}>Our Story</button>
+                    <button onClick={() => setMenu("Membership")} className={menu === "Membership" ? "active" : ""}>Membership</button>
+                    <button onClick={() => setMenu("WriteBlog")} className={menu === "WriteBlog" ? "active" : ""}>Write</button>
+                    <button onClick={() => setMenu("Contactus")} className={menu === "Contactus" ? "active" : ""}>Contact us</button>
+                    <button href="#" className='special-nav-link'>Get Started</button>
                 </div>
             </div>
         </>

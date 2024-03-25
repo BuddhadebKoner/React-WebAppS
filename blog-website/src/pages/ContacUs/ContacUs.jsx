@@ -3,6 +3,7 @@ import './ContacUs.css'
 
 export default function ContacUs() {
   return (
-    <div>ContacUs</div>
+    <div>ContacUs
+    </div>
   )
 }
