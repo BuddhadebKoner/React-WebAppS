@@ -2,6 +2,7 @@ import React from 'react'
 import './FeedSection.css'
 import Mypost from '../Mypost/Mypost'
 import Aboutcard from '../Aboutcard/Aboutcard'
+import Feedback from '../Feedback/Feedback'
 
 export default function FeedSection() {
     return (
@@ -10,6 +11,7 @@ export default function FeedSection() {
                 <Aboutcard />
             </div>
             <div className="mypost-container">
+                <Feedback />
                 <Mypost />
             </div>
         </div>

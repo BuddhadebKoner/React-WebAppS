@@ -11,9 +11,9 @@ export default function AboutCard() {
   return (
     <>
       <div className={`about-card ${expanded ? 'expanded' : ''}`}>
-        <p className='about-heading'>
+        <h3 className='about-heading'>
           About
-        </p>
+        </h3>
         <p className={`description ${expanded ? 'expanded' : ''}`}>
           I love cool tech stuff that could change people's life in a good way. With a website and software development background, I also diving into. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fuga inventore quibusdam doloremque cumque exercitationem cum ex voluptas quia voluptatum, obcaecati eaque id praesentium, maxime officiis eligendi odit magnam fugit.
         </p>
