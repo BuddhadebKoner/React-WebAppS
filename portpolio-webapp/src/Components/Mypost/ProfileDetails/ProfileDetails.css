@@ -10,7 +10,7 @@
 }
 
 .post-profile-icon{
-    border: 2px solid #ff5f5f;
+    border: 1px solid white;
     height: 100%;
     height: 100%;
     border-radius: 50%;
@@ -40,4 +40,9 @@
 
 .image-profile-threedot-container p{
     color: #bdbdbd;
+}
+
+.see-original-post{
+    color: black;
+    font-size: 12px;
 }

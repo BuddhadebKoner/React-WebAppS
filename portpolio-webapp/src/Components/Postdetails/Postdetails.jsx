@@ -23,19 +23,16 @@ export default function Postdetails() {
             {numberOfAssets !== 0 && (
                 <>
                     {posts.map((post, index) => (
-                        <>
-                            <div className="postdetails-container">
-                                <ProfileDetails />
-                                <div key={index} className="post">
-                                    <img src={post.image} className='postimage' alt="" />
-                                    <div className="post-details-description">
-                                        <h3>{post.title}</h3>
-                                        <p>{post.description}</p>
-                                    </div>
-                                    <a href={post.links} className='read-more-post-section'>Read More</a>
+                        <div key={index} className="postdetails-container">
+                            <ProfileDetails media={post.media} Medialink={post.links} />
+                            <div className="post">
+                                <img src={post.image} className='postimage' alt="" />
+                                <div className="post-details-description">
+                                    <h3>{post.title}</h3>
+                                    <p>{post.description}</p>
                                 </div>
                             </div>
-                        </>
+                        </div>
                     ))}
                 </>
             )}

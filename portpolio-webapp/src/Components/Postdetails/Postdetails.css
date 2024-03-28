@@ -19,9 +19,5 @@
 }
 
 .post-details-description>*{
-margin-top: 20px;
-}
-
-.read-more-post-section{
-    color: #ff5f5f;
+margin: 20px 0 10px 0;
 }
