@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProfileDetails.css'
-import { assets } from '../../../assets/postimg/postimg'
+import assets from '../../../assets/icons/icons';
+
 
 
 export default function ProfileDetails(props) {
@@ -15,7 +16,9 @@ export default function ProfileDetails(props) {
         </div>
         <div className="image-profile-threedot-container">
           <p>2 mounth ago</p>
-          <button><img src={assets.threeDot} className='post-profile-threedots' alt="" /></button>
+          <button>
+          <img src={assets.threeDot} className='post-profile-threedots' alt="" />
+          </button>
         </div>
       </div>
     </>
