@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Aboutcard.css';
+import assets from '../../assets/icons/icons';
 
 export default function AboutCard() {
   const [expanded, setExpanded] = useState(false);
@@ -21,11 +22,11 @@ export default function AboutCard() {
           {expanded ? 'See Less' : 'See More'}
         </button>
         <div className="about-media-links">
-          <a href=""> <img src="/icons/Link.png" className='link-icons' alt="" />buddhadebkoner.com</a>
+          <a href=""> <img src={assets.link} className='link-icons' alt="" />buddhadebkoner.com</a>
           <div className="media-icons-links">
-            <a href=""><img src="/icons/fb.png" alt="" /></a>
-            <a href=""><img src="/icons/x.png" alt="" /></a>
-            <a href=""><img src="/icons/linkedin.png" alt="" /></a>
+            <a href=""><img src={assets.fb} alt="" /></a>
+            <a href=""><img src={assets.x} alt="" /></a>
+            <a href=""><img src={assets.linkedin} alt="" /></a>
           </div>
           <div className="about-tags">
             <p>Programer</p>

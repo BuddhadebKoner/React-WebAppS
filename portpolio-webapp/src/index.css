@@ -11,6 +11,11 @@
     font-family: 'Nunito';
 }
 
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 a {
     display: inline;
     text-decoration: none;

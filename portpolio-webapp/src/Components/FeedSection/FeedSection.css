@@ -1,6 +1,6 @@
 .feed-container{
     width: 995px;
-    height: 200vh;
+    height: fit-content;
     background-color: transparent;
     display: flex;
     padding-top: 20px;
